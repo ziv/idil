@@ -15,3 +15,14 @@ export function generate(id: string): number {
         .reduce((a, v) => a + ((v > 9) ? v - 9 : v), 0);
     return (10 - sum % 10) % 10;
 }
+
+export function validate(id: string, check?: number | string): boolean {
+    if (undefined === check) {
+        if (!/^\d{7,9}$/.test(id)) {
+            throw new Error('id with check digit must have length of 7 to 9 digits only');
+        }
+        check = id.slice(-1);
+        id = id.slice(0, -1);
+    }
+    return generate(id) === parseInt(check as string, 10);
+}
