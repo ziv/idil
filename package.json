@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
+    "prepublish": "npm run build",
     "test": "jest"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ziv/idil.git"
   },
-  "author": "",
+  "author": "Ziv <ziv.perry@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ziv/idil/issues"
