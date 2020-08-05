@@ -1,6 +1,6 @@
 {
   "name": "idil",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Israeli ID number utilities",
   "main": "lib/index.js",
   "scripts": {
