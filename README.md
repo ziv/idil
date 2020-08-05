@@ -29,3 +29,8 @@ if (validate('12345678', 2)) {
     // is is valid
 }
 ```
+
+---
+
+* Contain type definition for TypeScript
+* MIT License
