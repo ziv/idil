@@ -2,10 +2,10 @@
   "name": "idil",
   "version": "1.0.0",
   "description": "Israeli ID number utilities",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "build": "tsc",
-    "prepublish": "npm run build",
+    "prepare": "tsc",
     "test": "jest"
   },
   "repository": {
@@ -30,7 +30,7 @@
       "js",
       "ts"
     ],
-    "rootDir": ".",
+    "rootDir": "./src",
     "testRegex": ".spec.ts$",
     "transform": {
       "^.+\\.(t|j)s$": "ts-jest"
